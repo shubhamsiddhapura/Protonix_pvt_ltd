@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../src/font/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../src/font/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../src/font/Fonts/WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../src/font/Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../src/font/Fonts/WEB/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../src/font/Fonts/WEB/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Apply the font */
+body {
+  font-family: 'Clash Display', sans-serif;
+}

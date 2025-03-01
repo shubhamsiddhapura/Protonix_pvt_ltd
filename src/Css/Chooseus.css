@@ -1,0 +1,101 @@
+/* Chooseus Component - Spline Background */
+.chooseus-container1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Clash Display', Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* Spline Background */
+.spline-background1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Features Section */
+.features-section1 {
+    padding: 80px 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.features-section1 h2 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Clash Display';
+}
+
+.features-container1 {
+    padding-left: 5.5rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Feature Card */
+.feature-card1 {
+    width: 450px;
+    height: 350px;
+    padding: 2rem;
+    background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.feature-card1:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.feature-icon1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 auto 15px;
+    background-color: black;
+    color: #6B6B6B;
+    transition: color 0.3s ease;
+}
+
+.feature-card1:hover .feature-icon1 {
+    color: white;
+}
+
+.feature-card1 h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.feature-card1 p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+.feature-card1:hover h3,
+.feature-card1:hover p {
+    color: lightgray;
+}

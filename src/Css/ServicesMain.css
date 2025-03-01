@@ -1,0 +1,581 @@
+/* Services Section */
+.servicesMain-section {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Services Container */
+.servicesMain-container {
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 90px;
+  height: 110vh;
+  z-index: 1;
+}
+
+/* Background Animation */
+.servicesMain-spline-background {
+  position: absolute;
+  top: -8%;
+  left: -5%;
+  z-index: 0;
+}
+
+/* Service Content Wrapper */
+.servicesMain-content-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-right: 40rem;
+}
+
+/* Title Styling */
+.servicesMain-title {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Service Description */
+.servicesMain-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.servicesMain-content p {
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* Card Styles */
+.service-pg-card {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-pg-card-inner {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: center; /* Ensure the flip happens at the center */
+}
+
+.service-pg-card:hover .service-pg-card-inner {
+  transform: rotateY(180deg);
+}
+
+.service-pg-card-front,
+.service-pg-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.service-pg-card-front {
+  background-color: #F4E3C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-pg-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-pg-card-back {
+  background-color: #F4E3C1;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-pg-card-content {
+  padding: 20px;
+}
+
+.service-pg-card-title {
+  font-size: 24px;
+  color: #4A4A4A;
+  font-weight: 700;
+}
+
+.service-pg-card-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 1.4;
+}
+
+/* Services Grid */
+.servicesMain-wrapper {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #000000;
+}
+
+/* Service Box */
+.servicesMain-box {
+  width: 350px;
+  height: 400px;
+  perspective: 1200px;
+  position: relative;
+  margin-bottom: 2rem;
+  transform-style: preserve-3d;
+}
+
+/* Flip Box Inner */
+.servicesMain-box-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.servicesMain-box:hover .servicesMain-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Styling */
+.servicesMain-box-front,
+.servicesMain-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Front Side */
+.servicesMain-box-front {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Side */
+.servicesMain-box-back {
+  background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+  backdrop-filter: blur(18px);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Service Icon Image */
+.servicesMain-icon-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Scale Effect */
+.servicesMain-box:hover .servicesMain-icon-img {
+  transform: scale(1.1);
+}
+
+/* Service Name */
+.servicesMain-name {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.95;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+/* Description Styling */
+.servicesMain-pg-card-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+/* Services Section */
+.servicesMain-section {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Services Container */
+.servicesMain-container {
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 90px;
+  height: 110vh;
+  z-index: 1;
+}
+
+/* Background Animation */
+.servicesMain-spline-background {
+  position: absolute;
+  top: -8%;
+  left: -5%;
+  z-index: 0;
+}
+
+/* Service Content Wrapper */
+.servicesMain-content-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-right: 40rem;
+}
+
+/* Title Styling */
+.servicesMain-title {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Service Description */
+.servicesMain-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.servicesMain-content p {
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* Card Styles */
+.service-pg-card {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-pg-card-inner {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: center; /* Ensure the flip happens at the center */
+}
+
+.service-pg-card:hover .service-pg-card-inner {
+  transform: rotateY(180deg);
+}
+
+.service-pg-card-front,
+.service-pg-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.service-pg-card-front {
+  background-color: #F4E3C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-pg-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-pg-card-back {
+  background-color: #F4E3C1;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-pg-card-content {
+  padding: 20px;
+}
+
+.service-pg-card-title {
+  font-size: 24px;
+  color: #4A4A4A;
+  font-weight: 700;
+}
+
+.service-pg-card-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 1.4;
+}
+
+/* Services Grid */
+.servicesMain-wrapper {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #000000;
+}
+
+/* Service Box */
+.servicesMain-box {
+  width: 350px;
+  height: 400px;
+  perspective: 1200px;
+  position: relative;
+  margin-bottom: 2rem;
+  transform-style: preserve-3d;
+}
+
+/* Flip Box Inner */
+.servicesMain-box-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.servicesMain-box:hover .servicesMain-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Styling */
+.servicesMain-box-front,
+.servicesMain-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Front Side */
+.servicesMain-box-front {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Side */
+.servicesMain-box-back {
+  background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+  backdrop-filter: blur(18px);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Service Icon Image */
+.servicesMain-icon-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Scale Effect */
+.servicesMain-box:hover .servicesMain-icon-img {
+  transform: scale(1.1);
+}
+
+/* Service Name */
+.servicesMain-name {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.95;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+/* Description Styling */
+.servicesMain-pg-card-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 1024px) {
+  .servicesMain-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+  .servicesMain-title,
+  .servicesMain-content,
+  .servicesMain-name,
+  .servicesMain-pg-card-description {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+
+  .servicesMain-box {
+    width: 100%; /* More width */
+    max-width: 550px; /* Increased max width */
+    height: 420px; /* Increased height */
+     /* Extra space between boxes */
+    padding: 10px;
+    padding-right: 2.5rem; /* Increased padding */
+  }
+
+  .servicesMain-icon-img {
+    width: 300px; /* Bigger image */
+    height: 300px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
+  .servicesMain-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+  }
+
+  .servicesMain-name{
+    font-size: 2rem;
+  }
+  
+  .servicesMain-title
+  {
+    font-size: 4rem;
+    margin-left: -10%;
+  }
+  .servicesMain-content,
+  .servicesMain-name,
+  .servicesMain-pg-card-description {
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-left: -5%;
+  }
+
+  .servicesMain-box {
+    
+    max-width: 500px; /* Bigger width */
+    height: 500px; /* Increased padding */
+  }
+
+  .servicesMain-icon-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media screen and (max-width: 480px) {
+  .servicesMain-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .servicesMain-box {
+    width: 100%;
+    max-width: 400px;
+    height: 470px; 
+  }
+
+  .servicesMain-icon-img {
+    width: 220px;
+    height: 220px;
+  }
+} 

@@ -1,0 +1,86 @@
+/* Scoped Container */
+.testing-page .testing-container {
+    padding: 20px;
+    padding-top: 10rem;
+    background-color: #0d0d0d; /* Dark background for testing page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Scoped Common Section Styling */
+.testing-page .testing-section {
+    background: linear-gradient(0deg, rgba(184, 2, 84, 0.5) 0%, rgba(101, 0, 49, 0.6) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    padding-left: 9rem;
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.15);
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Scoped Content Layout */
+.testing-page .testing-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Scoped Image Styling */
+.testing-page .testing-image {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Scoped Text Content */
+.testing-page .testing-text {
+    width: 55%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.testing-page h2 {
+    color: #ffffff; /* White heading */
+    text-align: center;
+    font-size: 2.8rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.testing-page p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.testing-page ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.testing-page li {
+    margin-bottom: 5px;
+    color: #ffcc00; /* Light yellow for contrast */
+}
+
+/* Scoped Responsive Design */
+@media (max-width: 768px) {
+    .testing-page .testing-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testing-page .testing-image {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .testing-page .testing-text {
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+.terms-page-container {
+  background-color: black;
+  padding: 5rem;
+  color: white;
+  padding-top: 12rem;
+  margin: auto;
+  line-height: 1rem;
+  letter-spacing: 1px;
+}
+
+.terms-page-title {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  padding-left: 12rem;
+}
+
+.terms-page-section-title {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 1rem;
+}
+
+.terms-page-text {
+  padding: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}

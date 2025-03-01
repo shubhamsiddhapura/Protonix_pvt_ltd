@@ -1,0 +1,86 @@
+/* Unique Scoped Container */
+.frontend-section .frontend-container1 {
+  padding: 20px;
+  padding-top: 10rem;
+  background-color: #000; /* Black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Common Section Styling */
+.frontend-section .section11 {
+  background: linear-gradient(0deg, rgba(184, 2, 75, 0.379) 0%, rgba(101, 0, 69, 0.521) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+  padding-left: 9rem;
+  box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.15);
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Content Layout */
+.frontend-section .content11 {
+  display: flex;
+  align-items: center;
+}
+
+/* Image Styling */
+.frontend-section .framework-image {
+  width: 40%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Text Content */
+.frontend-section .text-content11 {
+  width: 55%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.frontend-section h2 {
+  color: #ffffff; /* Gold heading color for contrast */
+  text-align: center;
+  font-size: 3rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+}
+
+.frontend-section p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.frontend-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.frontend-section li {
+  margin-bottom: 5px;
+  color: #e49d10; /* Light beige for better visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .frontend-section .content11 {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .frontend-section .framework-image {
+      width: 80%;
+      margin-bottom: 15px;
+  }
+
+  .frontend-section .text-content11 {
+      width: 100%;
+  }
+}

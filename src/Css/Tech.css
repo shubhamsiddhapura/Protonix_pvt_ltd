@@ -1,0 +1,162 @@
+/* Main Container */
+.tech-container {
+    width: 100%;
+    background-color: black; /* Dark Background */
+    padding-top: 9rem;  
+    position: relative; /* Ensures child absolute elements position correctly */
+    overflow: hidden; /* Prevents any unexpected overflow */
+}
+.spline-bg23 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 0; /* Ensures it stays in the background */
+    overflow: hidden;
+}
+
+.tech-container {
+    position: relative;
+    width: 100%;
+    padding-top: 9rem;
+    overflow: hidden;
+    z-index: 1; /* Ensures content is above background */
+    padding: 40px 5%;
+}
+
+
+.tech-header {
+    text-align: center; /* Centers the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures full centering */
+    justify-content: center;
+    width: 100%;
+    padding-top: 11rem;
+    padding-bottom: 11.5rem;
+}
+
+.tech-title {
+    font-size: 7rem;
+    color: white; /* White text */
+    font-weight: bold;
+    position: relative; /* Ensures it's above the spline */
+    z-index: 1; /* Keeps text on top */
+    
+}
+
+.tech-subtitle {
+    font-size:2rem;
+    color: #ddd; /* Light Gray */
+    margin-top: 5px; /* Adjust spacing */
+    position: relative;
+    z-index: 2; /* Ensure it is above the background */
+}
+
+
+/* Technology Category - Solid Glass Effect */
+.tech-category {
+    background: rgba(0, 0, 0, 0.2); /* More solid glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Thin white border */
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Stronger glow */
+}
+
+.tech-category:hover {
+    transform: translateY(-5px);
+}
+
+/* Category Header */
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: rgb(255, 255, 255) 1px solid;
+    border-top: white 1px solid;
+    
+}
+
+.category-title {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Items Grid - Ensures all items within a category are in a single row */
+.items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+/* Individual Tech Item - Solid Glass Effect */
+.tech-item {
+    background: rgba(255, 255, 255, 0.2); ; /* More solid effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Thin white border */
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    height: 320px; /* Increased size */
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Stronger glow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Item Header */
+.item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+
+/* Item Title */
+.item-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Item Description */
+.item-description {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Tech Item Image */
+.item-image {
+    width: 180px; /* Increased size */
+    height: 180px;
+}
+
+/* Icons */
+.icon-lg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Custom Category Header Colors */
+.frontend-header { color: #00AFFF; } /* Bright Blue */
+.backend-header { color: #28D745; } /* Bright Green */
+.cloud-header { color: #A56EFF; } /* Bright Purple */
+.appdev-header { color: #20C4D8; } /* Bright Teal */
+.testing-header { color: #FF5555; } /* Bright Red */

@@ -1,0 +1,119 @@
+/* Wrapper */
+.contact-us-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background */
+.spline-bg {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    top: -15%;
+    left: 0;
+    z-index: -1;
+}
+
+/* Page Container */
+.contact-us-pg-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 8rem 0 3rem;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    color: white;
+    margin-left: 4rem;
+}
+
+.left-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.left-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Contact Details */
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-detail a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form Styling */
+.form-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.contact-us-pg-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-us-pg-form input,
+.contact-us-pg-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.715);
+    backdrop-filter: blur(5px);
+}
+
+.contact-us-pg-form button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contact-us-pg-form button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

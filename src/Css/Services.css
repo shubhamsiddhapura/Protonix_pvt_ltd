@@ -1,0 +1,95 @@
+
+.services-container1 {
+    height: 100vh; /* Full viewport height */
+    background: #b8024a;
+    background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* So that absolute positioning of h1 works inside this container */
+    padding: 20px;
+  }
+  
+.services-header1 {
+    display: flex;
+    flex-direction: column; /* Stack the heading and icon vertically */
+    align-items: flex-start; /* Align items to the left */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-left: 4.5rem;
+}
+
+.services-container1 h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 65px;
+    font-weight: 1000;
+    line-height: 43px;
+    padding-top: 1rem;
+    color: white;
+    margin-top: 1rem; /* Remove the margin between h1 and icon */
+}
+
+
+/* Services Grid */
+.services-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3x3 grid */
+    gap: 20px; /* Space between boxes */
+    margin-top: 5rem;
+}
+
+/* Service Box */
+.service-box1 {
+    width: 350px;
+    height: 150px;
+    background: transparent; /* Transparent background */
+    border: 1px solid white; /* White border for visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    --c: #1095c1; /* the color */
+  color: #0000;
+  background: 
+    linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) no-repeat,
+    var(--_c,#0000);
+  -webkit-background-clip: text,padding-box,padding-box;
+          background-clip: text,padding-box,padding-box;
+  transition: 0s ,color .5s,background-color .5s;
+}
+
+/* Hover Effect - Turns Background Black */
+.service-box1:hover {
+    background: black;
+}
+
+/* Glow Effect on Hover */
+.service-box1:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+/* Service Icon */
+.service-icon1 {
+    margin-top: 1rem;
+    width: 60px;
+    height: 60px;
+}
+
+/* Service Text */
+.service-box1 p {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white; /* White text */
+    margin: 0;
+    padding:0.5rem;
+}

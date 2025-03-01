@@ -1,0 +1,107 @@
+
+.contact-page1 {
+    position: relative;
+    width: 100vw; /* Ensuring full width */
+    height: 115vh;
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Align content vertically */
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+    z-index: 1;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: clip; /* Instead of hidden, to avoid blocking mouse events */
+}
+
+.spline-bg2 {
+    position: absolute;
+    padding-top: 13rem;
+    padding-right: 1rem;
+    left: -25%;
+    z-index: -1;
+    transform: scale(1.2);
+    pointer-events: none; /* Ensure it does not interfere with mouse events */
+}
+
+
+
+.contact-container1 {
+    max-width: 500px;
+    width: 100%; /* Ensure it doesn't exceed screen width */
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.right-position1 {
+    position: absolute;
+    top: 50%;
+    right: 10%; /* Adjusted for better alignment */
+    transform: translateY(-50%);
+}
+
+.contact-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-description1 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contact-form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-input1,
+.contact-textarea1 {
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    color: black;
+    outline: none;
+    box-sizing: border-box; /* Prevents overflow from padding */
+}
+
+.contact-input1::placeholder,
+.contact-textarea1::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-textarea1 {
+    height: 140px;
+}
+
+.contact-button1 {
+    padding: 14px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.contact-button1:hover {
+    background: rgb(0, 0, 0);
+}

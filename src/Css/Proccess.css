@@ -1,0 +1,266 @@
+.process-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 0;
+}
+
+.process-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../assets/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; /* Keep it lower than orbit */
+}
+
+
+.process-wrapper img {
+  position: relative;
+  z-index: 2; /* Ensures images are above the dark overlay */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+  .center-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color:white; /* Soft gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 275px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .center-circle:hover {
+    background: #b8024a;
+  background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+  }
+  
+  
+  .h111{
+    font-size: 1.5rem;
+    margin: 0;
+    color: black; 
+  }
+  
+  .center-circle p {
+    font-size: 1rem;
+    color: #555; /* Soft gray text */
+    margin: 0.5rem 0;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .steps-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .left {
+    align-items: flex-end;
+  }
+  
+  .right {
+    align-items: flex-start;
+  }
+  
+  .step-box {
+    width: 280px; /* Adjust width */
+    height: 180px; /* Add height for balance */
+    padding: 1rem; /* Adjust padding for better space */
+    background-color:white;  /* High border-radius for pill shape */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+  
+  .step-box:hover {
+    background: #b8024a;
+    background: linear-gradient(0deg, rgba(184, 2, 74, 1) 0%, rgba(101, 0, 69, 1) 100%);
+    transform: scale(1.05); /* Slight zoom effect for added interactivity */
+  }
+  
+  
+  .step-box .icon {
+    font-size: 2rem;
+  }
+  
+  .step-box .icon img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .step-box h3 {
+    font-size: 1rem;
+    color: #333; /* Darker gray for text */
+    margin-bottom: 0;
+  }
+  
+  .step-box p {
+    font-size: 0.8rem;
+    color: #666; /* Lighter gray for description text */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  .step-box:hover p {
+    color: white; /* Change text color to white on hover */
+  }
+  
+  .steps-column.left .step-box:nth-child(1),
+  .steps-column.left .step-box:nth-child(3) {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    left: 100px;
+    margin-top: 4rem;
+  }
+  
+  .steps-column.right .step-box:nth-child(1),
+  .steps-column.right .step-box:nth-child(3) {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    right: 100px;
+  }
+  
+  .steps-column.left .step-box:nth-child(2),
+  .steps-column.right .step-box:nth-child(2) {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left .step-box::before {
+    right: -30px;
+  }
+  
+  .right .step-box::before {
+    left: -30px;
+  }
+  
+  .steps-column.left .step-box:nth-child(1)::before {
+    transform: rotate(30deg);
+  }
+  
+  .steps-column.left .step-box:nth-child(2)::before {
+    transform: rotate(0deg);
+  }
+  
+  .steps-column.left .step-box:nth-child(3)::before {
+    transform: rotate(-30deg);
+  }
+  
+  .steps-column.right .step-box:nth-child(1)::before {
+    transform: rotate(-30deg);
+  }
+  
+  .steps-column.right .step-box:nth-child(2)::before {
+    transform: rotate(0deg);
+  }
+  
+  .steps-column.right .step-box:nth-child(3)::before {
+    transform: rotate(30deg);
+  }
+  
+  /* Orbit styles */
+  .orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .orbit-circle {
+    position: absolute;
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .outer {
+    width: 700px;
+    height: 700px;
+    top: calc(50% - 350px);
+    left: calc(50% - 350px);
+  }
+  
+  .middle {
+    width: 550px;
+    height: 550px;
+    top: calc(50% - 275px);
+    left: calc(50% - 275px);
+  }
+  
+  .inner {
+    width: 400px;
+    height: 400px;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Add styles for the dots moving along the orbits */
+  .orbit-circle::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 20s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    25% {
+      transform: translate(-50%, 100%);
+    }
+    50% {
+      transform: translate(-50%, 100%);
+    }
+    75% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }

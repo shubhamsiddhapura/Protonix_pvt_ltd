@@ -1,0 +1,87 @@
+/* Unique Scoped Container */
+.backend-container {
+    padding: 20px;
+    padding-top: 10rem;
+    background-color: #000; /* Black background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Common Section Styling */
+.backend-container .section-backend {
+    background: linear-gradient(0deg, rgba(184, 2, 75, 0.379) 0%, rgba(101, 0, 69, 0.521) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    padding-left: 9rem;
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.15);
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Content Layout */
+.backend-container .content-backend {
+    display: flex;
+    align-items: center;
+}
+
+/* Image Styling */
+.backend-container .backend-image {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Text Content */
+.backend-container .text-content-backend {
+    width: 55%;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Scoped Typography */
+.backend-container h2 {
+    color: #ffffff; /* White heading */
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.backend-container p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.backend-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.backend-container li {
+    margin-bottom: 5px;
+    color: #e49d10; /* Light beige for better visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .backend-container .content-backend {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .backend-container .backend-image {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .backend-container .text-content-backend {
+        width: 100%;
+    }
+}
