@@ -527,6 +527,10 @@
     width: 100%;
   }
 
+  .servicesMain-section{
+    padding-top: 6rem;
+  }
+
   .servicesMain-name{
     font-size: 2rem;
   }

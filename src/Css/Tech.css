@@ -160,3 +160,39 @@
 .cloud-header { color: #A56EFF; } /* Bright Purple */
 .appdev-header { color: #20C4D8; } /* Bright Teal */
 .testing-header { color: #FF5555; } /* Bright Red */
+
+
+@media (max-width: 480px) {
+    .tech-title {
+        font-size: 3rem; /* Adjust for mobile screens */
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .tech-subtitle {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .tech-header {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        
+        
+    }
+
+    .tech-container {
+        padding: 20px 5%;
+        
+    }
+
+    .spline-bg23 {
+        height: 0vh;
+        ; /* Reduce background height */
+    }
+
+    .category-title
+    {
+        font-size: 3rem;
+    }
+}

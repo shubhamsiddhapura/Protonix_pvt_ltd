@@ -27,3 +27,79 @@
   line-height: 1.6;
   margin-bottom: 10px;
 }
+
+
+@media (max-width: 1024px) {
+  .terms-page-container {
+    padding: 4rem;
+    padding-top: 10rem;
+  }
+
+  .terms-page-title {
+    font-size: 3rem;
+    padding-left: 6rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .terms-page-section-title {
+    font-size: 2rem;
+  }
+
+  .terms-page-text {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-page-container {
+    padding: 3rem;
+    padding-top: 8rem;
+  }
+
+  .terms-page-title {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .terms-page-section-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .terms-page-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .terms-page-container {
+    padding: 2rem;
+    padding-top: 6rem;
+  }
+
+  .terms-page-title {
+    font-size: 2rem;
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .terms-page-section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .terms-page-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+  }
+}

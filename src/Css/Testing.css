@@ -68,19 +68,57 @@
     color: #ffcc00; /* Light yellow for contrast */
 }
 
-/* Scoped Responsive Design */
+
 @media (max-width: 768px) {
+    .testing-page .testing-section {
+        padding: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .testing-page .testing-content {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
 
     .testing-page .testing-image {
-        width: 80%;
-        margin-bottom: 15px;
+        width: 70%;
+        max-width: 220px;
+        margin-bottom: 10px;
     }
 
     .testing-page .testing-text {
         width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .testing-page h2 {
+        font-size: 2rem;
+    }
+
+    .testing-page p,
+    .testing-page li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testing-page h2 {
+        font-size: 1.8rem;
+    }
+
+    .testing-page .testing-section {
+        padding: 10px;
+    }
+
+    .testing-page .testing-image {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .testing-page p,
+    .testing-page li {
+        font-size: 0.85rem;
     }
 }

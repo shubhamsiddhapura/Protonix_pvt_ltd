@@ -70,19 +70,82 @@
     color: #e49d10; /* Light beige for better visibility */
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .cloud-container .content-cloud {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
 
     .cloud-container .cloud-image {
-        width: 80%;
+        width: 60%;
+        max-width: 300px;
+        padding-right: 0;
         margin-bottom: 15px;
     }
 
     .cloud-container .text-content-cloud {
+        width: 90%;
+    }
+
+    .cloud-container h2 {
+        font-size: 2.5rem;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .cloud-container .section-cloud {
+        padding: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cloud-container .content-cloud {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cloud-container .cloud-image {
+        width: 70%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .cloud-container .text-content-cloud {
         width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .cloud-container h2 {
+        font-size: 2rem;
+    }
+
+    .cloud-container p,
+    .cloud-container li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cloud-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .cloud-container .section-cloud {
+        padding: 10px;
+    }
+
+    .cloud-container .cloud-image {
+        width: 80%;
+        max-width: 220px;
+    }
+
+    .cloud-container p,
+    .cloud-container li {
+        font-size: 0.85rem;
     }
 }

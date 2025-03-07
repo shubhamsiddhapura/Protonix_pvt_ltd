@@ -69,20 +69,81 @@
     color: #e49d10; /* Light beige for better visibility */
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .appdev-container .content-appdev {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
 
     .appdev-container .appdev-image {
-        width: 80%;
+        width: 60%;
+        max-width: 250px;
         margin-bottom: 15px;
     }
 
     .appdev-container .text-content-appdev {
-        width: 100%;
+        width: 90%;
+    }
+
+    .appdev-container h2 {
+        font-size: 2.5rem;
+        padding-right: 0;
     }
 }
-    
+
+@media (max-width: 768px) {
+    .appdev-container .section-appdev {
+        padding: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .appdev-container .content-appdev {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .appdev-container .appdev-image {
+        width: 70%;
+        max-width: 220px;
+        margin-bottom: 10px;
+    }
+
+    .appdev-container .text-content-appdev {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .appdev-container h2 {
+        font-size: 2rem;
+    }
+
+    .appdev-container p,
+    .appdev-container li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .appdev-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .appdev-container .section-appdev {
+        padding: 10px;
+    }
+
+    .appdev-container .appdev-image {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .appdev-container p,
+    .appdev-container li {
+        font-size: 0.85rem;
+    }
+}

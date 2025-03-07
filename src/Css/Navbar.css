@@ -116,3 +116,59 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+    height: 80px;
+  }
+
+  .logo img {
+    width: 250px;
+    margin-top: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px;
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    width: 200px;
+    margin-top: 1rem;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    margin-right: 0.5rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    top: 110%;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+}

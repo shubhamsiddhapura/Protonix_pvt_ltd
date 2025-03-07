@@ -105,3 +105,107 @@ html, body {
 .contact-button1:hover {
     background: rgb(0, 0, 0);
 }
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-page1 {
+        height: auto; /* Adjust height to content */
+        padding: 4rem 1rem; /* Adjust padding for better spacing */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spline-bg2 {
+        display: none; /* Hide background decoration for clarity */
+    }
+
+    .contact-container1 {
+        max-width: 90%; /* Adjust width for better responsiveness */
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .right-position1 {
+        position: static; /* Remove absolute positioning */
+        transform: none;
+        width: 100%;
+        text-align: center; /* Center align */
+    }
+
+    .contact-title1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .contact-description1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact-form1 {
+        gap: 15px;
+    }
+
+    .contact-input1,
+    .contact-textarea1 {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-button1 {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page1 {
+        height: auto; /* Adjust height dynamically */
+        padding: 3rem 1rem; /* Adjust padding */
+        flex-direction: column;
+    }
+
+    .spline-bg2 {
+        display: none; /* Hide background decoration */
+    }
+
+    .contact-container1 {
+        max-width: 95%; /* Make form take up more width */
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .right-position1 {
+        position: static; /* Remove absolute positioning */
+        transform: none;
+        width: 100%;
+        text-align: center; /* Center align */
+    }
+
+    .contact-title1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact-description1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .contact-form1 {
+        gap: 12px;
+    }
+
+    .contact-input1,
+    .contact-textarea1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-button1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+

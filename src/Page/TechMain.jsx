@@ -121,7 +121,10 @@ const Technology = () => {
                         <div 
                             key={index} 
                             className="tech-category" 
-                            onClick={() => navigate(category.route)}
+                            onClick={() => {
+                                window.scrollTo(0, 0); // Ensure the new page starts from the top
+                                navigate(category.route);
+                            }}
                             style={{ cursor: "pointer" }}
                         >
                             <div className={`category-header ${category.cssClass}`}>

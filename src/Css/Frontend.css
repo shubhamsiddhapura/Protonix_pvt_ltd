@@ -68,19 +68,84 @@
   color: #e49d10; /* Light beige for better visibility */
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+  .frontend-section .section11 {
+    padding: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .frontend-section .content11 {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 
   .frontend-section .framework-image {
-      width: 80%;
-      margin-bottom: 15px;
+    width: 70%;
+    max-width: 220px;
+    margin-bottom: 10px;
   }
 
   .frontend-section .text-content11 {
-      width: 100%;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .frontend-section h2 {
+    font-size: 2rem;
+    padding-left: 5rem;
+  }
+
+  .frontend-section p {
+    font-size: 0.9rem;
+  }
+
+  .frontend-section li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .frontend-section .frontend-container1 {
+    padding: 15px;
+    padding-top: 6rem;
+  }
+
+  .frontend-section .section11 {
+    padding: 12px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 8px;
+  }
+
+  .frontend-section .content11 {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .frontend-section .framework-image {
+    width: 80%;
+    max-width: 180px;
+    margin-bottom: 8px;
+  }
+
+  .frontend-section .text-content11 {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .frontend-section h2 {
+    font-size: 1.8rem;
+    padding-left: 0;
+  }
+
+  .frontend-section p {
+    font-size: 0.85rem;
+  }
+
+  .frontend-section li {
+    font-size: 0.85rem;
   }
 }

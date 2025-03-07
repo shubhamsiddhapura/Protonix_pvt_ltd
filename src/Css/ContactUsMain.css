@@ -117,3 +117,107 @@
 .contact-us-pg-form button:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .left-section {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .left-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .left-section p {
+        font-size: 0.95rem;
+    }
+
+    .contact-detail {
+        justify-content: center;
+    }
+
+    .form-box {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us-pg-container {
+        padding: 2rem;
+    }
+
+    .left-section h1 {
+        font-size: 1.6rem;
+        padding-top: 3rem;
+    }
+
+    .left-section p {
+        font-size: 0.9rem;
+    }
+
+    .contact-detail {
+        font-size: 0.9rem;
+    }
+
+    .form-box {
+        padding: 25px;
+    }
+
+    .contact-us-pg-form input,
+    .contact-us-pg-form textarea {
+        padding: 10px;
+    }
+
+    .contact-us-pg-form button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us-pg-container {
+        margin: 4rem 0 2rem;
+    }
+
+    .left-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .left-section p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-detail a {
+        font-size: 0.85rem;
+    }
+
+    .form-box {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .contact-us-pg-form input,
+    .contact-us-pg-form textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .contact-us-pg-form button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
