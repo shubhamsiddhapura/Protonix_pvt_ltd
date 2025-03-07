@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"; // Import Navbar
 import Home from "./Page/Homepage";
-import Services from "./page/ServicesMain";  // Ensure correct capitalization
+import Services from "./Page/ServicesMainpage";  // Ensure correct capitalization
 import Technology from "./page/TechMain";
 import About from "./page/AboutUs";
 import Contact from "./page/ContactUsMain";

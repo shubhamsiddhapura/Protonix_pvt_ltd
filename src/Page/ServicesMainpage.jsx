@@ -1,7 +1,7 @@
 import Spline from "@splinetool/react-spline";
 import "../Css/ServicesMain.css";
-import Footer from "../Page/Footer";
-import Navbar from "../Page/Navbar";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 import img1 from "../assets/web.png";
 import img2 from "../assets/app.svg";
 import img3 from "../assets/uiux.png";
