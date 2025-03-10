@@ -83,6 +83,12 @@
     height: 60px;
 }
 
+/* Remove default link styles */
+.service-link1 {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
 /* Service Text */
 .service-box1 p {
     font-family: 'Clash Display', sans-serif;
@@ -91,8 +97,9 @@
     font-weight: lighter;
     color: white; /* White text */
     margin: 0;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
+
 
 
 /* Mobile Responsive */

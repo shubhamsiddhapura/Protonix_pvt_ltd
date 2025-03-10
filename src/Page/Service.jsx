@@ -1,15 +1,14 @@
-
+import { Link } from "react-router-dom";
 import '../Css/Services.css';
-import i1 from "../assets/I1.png"
-import i2 from "../assets/I2.png"
-import i3 from "../assets/I3.png"
-import i4 from "../assets/I4.png"
-import i5 from "../assets/I5.png"
-import i6 from "../assets/I6.png"
-import i7 from "../assets/I7.png"
-import i8 from "../assets/I8.png"
-import i9 from "../assets/I9.png"
-
+import i1 from "../assets/I1.png";
+import i2 from "../assets/I2.png";
+import i3 from "../assets/I3.png";
+import i4 from "../assets/I4.png";
+import i5 from "../assets/I5.png";
+import i6 from "../assets/I6.png";
+import i7 from "../assets/I7.png";
+import i8 from "../assets/I8.png";
+import i9 from "../assets/I9.png";
 
 const servicesList = [
     { name: "Web Development", icon: i1 },
@@ -32,10 +31,12 @@ const Services = () => {
             
             <div className="services-grid1">
                 {servicesList.map((service, index) => (
-                    <div className="service-box1" key={index}>
-                        <img src={service.icon} alt={service.name} className="service-icon1" />
-                        <p>{service.name}</p>
-                    </div>
+                    <Link to="/servicemain" key={index} className="service-link1">
+                        <div className="service-box1">
+                            <img src={service.icon} alt={service.name} className="service-icon1" />
+                            <p>{service.name}</p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

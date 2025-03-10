@@ -16,7 +16,7 @@ const testimonials = [
         title: "TECHNICAL ADVISOR",
         image: img2,
         quote: "With extensive industrial experience in AI, Sunil Kumar drives innovation and excellence in our solutions. Guided by their expertise, we stay ahead in delivering transformative technology.",
-        linkedin: "https://www.linkedin.com/in/jashank-desai-72b9a311b"
+        linkedin: "https://www.linkedin.com/in/prof-sunil-kumar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
 ];
 

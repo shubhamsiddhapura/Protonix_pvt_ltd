@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"; // Import Navbar
 import Home from "./Page/Homepage";
 import Services from "./Page/ServicesMainpage";  // Ensure correct capitalization
-import Technology from "./page/TechMain";
+import Technology from "./page/TechMainpage";
 import About from "./page/AboutUs";
 import Contact from "./page/ContactUsMain";
 import PrivacyPolicy from "./Page/PricyPolicy";
@@ -11,7 +11,7 @@ import BackendPage from "./Page/Backend"
 import CloudPage from "./Page/Cloud"
 import AppDevelopmentPage from "./Page/Appdev"
 import TestingPage from "./Page/Testing"
-
+import ServiceMain from "./Page/ServicesMainpage";
 function App() {
   return (
     <>
@@ -29,6 +29,9 @@ function App() {
                 <Route path="/cloud" element={<CloudPage />} />
                 <Route path="/app-development" element={<AppDevelopmentPage />} />
                  <Route path="/testing" element={<TestingPage />} /> 
+                 <Route path="/" element={<Services />} />
+                <Route path="/servicemain" element={<ServiceMain />} />
+
       </Routes>
     </>
   );
