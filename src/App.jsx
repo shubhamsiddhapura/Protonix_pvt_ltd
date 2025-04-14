@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"; // Import Navbar
 import Home from "./Page/Homepage";
 import Services from "./Page/ServicesMainpage";  // Ensure correct capitalization
-import Technology from "./page/techmain.jsx";
+import Technology from "./Page/techmain";
 import About from "./page/AboutUs";
 import Contact from "./page/ContactUsMain";
 import PrivacyPolicy from "./Page/PricyPolicy";
