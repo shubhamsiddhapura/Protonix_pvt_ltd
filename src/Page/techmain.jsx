@@ -7,8 +7,8 @@ import {
     Smartphone, Tablet, Beaker, Bug
 } from 'lucide-react';
 import '../Css/Tech.css';
-import Navbar from "../Page/Navbar";
-import Footer from "../Page/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { useNavigate } from 'react-router-dom';
 
 // Importing Local Images
