@@ -3,8 +3,8 @@ import Home from "./Page/Homepage";
 import Services from "./Page/ServicesMainpage";  // Ensure correct capitalization
 import Technology from "./Page/techmain";
 import About from "./Page/About";
-import Contact from "./page/ContactUsMain";
-import PrivacyPolicy from "./Page/PricyPolicy";
+import Contact from "./Page/contactusmain";
+import PrivacyPolicy from "./Page/privacypolicy";
 import Term from "./Page/Term&Condi"
 import FrontendPage from "./Page/Frontend"
 import BackendPage from "./Page/Backend"

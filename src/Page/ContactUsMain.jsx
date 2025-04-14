@@ -2,8 +2,8 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import Spline from "@splinetool/react-spline";
 import "../Css/ContactUsMain.css";
-import Footer from "../Page/Footer";
-import Navbar from "../Page/Navbar";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
